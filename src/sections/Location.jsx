@@ -7,7 +7,6 @@ const Location = () => {
             bg-slate-800/90 p-6 md:p-8 rounded-xl
             border ${theme.border}
             shadow-xl ${theme.shadow}
-            transform hover:scale-105 transition-all duration-300
           `}>
                 <h2 className={`
               text-xl md:text-3xl flex items-center gap-2 md:gap-4 mb-6
