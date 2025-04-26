@@ -48,10 +48,29 @@ const Header = () => {
         >
           ROYSTON M LOUIS
         </h1>
-        <p className="text-base sm:text-lg md:text-xl mt-2 tracking-wider opacity-85 flex items-center gap-2 justify-center md:justify-start">
+        <motion.p 
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ 
+            opacity: 1, 
+            y: 0,
+            textShadow: ["0px 0px 0px rgba(255,255,255,0)", "0px 10px 20px rgba(255,255,255,0.5)", "0px 0px 0px rgba(255,255,255,0)"],
+            transition: {
+              duration: 2,
+              textShadow: {
+                repeat: Infinity,
+                duration: 3
+              }
+            }
+          }}
+          className="text-base sm:text-lg md:text-xl mt-2 tracking-wider opacity-85 flex items-center gap-2 justify-center md:justify-start font-bold"
+          style={{ 
+            transform: "perspective(1000px) rotateX(10deg)",
+            transformStyle: "preserve-3d"
+          }}
+        >
           <Terminal className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 animate-pulse text-yellow-500" />
           FULL STACK DEVELOPER
-        </p>
+        </motion.p>
       </div>
 
       {/* Mobile Menu Button */}
