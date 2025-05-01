@@ -1,8 +1,29 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern portfolio website built with React and Vite featuring:
 
-Currently, two official plugins are available:
+- Smooth animated UI with Framer Motion
+- Custom splash screen with text animation
+- Performance optimized with static images
+- Responsive design for all devices
+- Interactive project cards with hover effects
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Performance Optimizations
+
+- Removed video features for better performance
+- Using static image assets instead of videos
+- Optimized animation timings
+- Preloaded critical assets
+
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
